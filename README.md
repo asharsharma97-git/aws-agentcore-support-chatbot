@@ -18,27 +18,6 @@ The assistant routes each request into one of three paths:
 
 ![AWS AgentCore Support Chatbot architecture](docs/architecture.png)
 
-```text
-Customer
-   │
- chat.py
-   │
-Amazon Bedrock AgentCore Managed Harness
-   │
-System Prompt / Request Routing
-   ├──────── Platform Question ──────── Embedded FAQ
-   │
-   ├──────── Bug Report ─────────────── Multi-turn field collection
-   │                                      │
-   │                               AgentCore Gateway
-   │                                      │
-   │                                  AWS Lambda
-   │                                      │
-   │                                  DynamoDB
-   │
-   └──────── Other Request ──────────── Human support handoff
-```
-
 **Core services:** Amazon Bedrock AgentCore, Amazon Nova Pro, AgentCore Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon Bedrock Evaluations, AWS CloudFormation, Python and boto3.
 
 ## Multi-turn tool workflow
@@ -100,6 +79,6 @@ This project provided practical experience treating an LLM as part of a larger a
 
 ## Attribution
 
-This repository is a **portfolio presentation of a Udacity AWS Agentic AI course project**. Starter code, setup utilities, and infrastructure templates were provided as part of the coursework and are retained here for architectural context. The repository is not intended to imply that all included source code was authored from scratch.
+Developed as part of the Udacity AWS Agentic AI coursework. This project builds on course-provided starter code and infrastructure templates, with my work focused on agent behavior, prompt design, tool integration, testing, evaluation, and security hardening.
 
-No AWS credentials or secret keys are included. Environment-specific generated configuration such as `agentcore_config.json` should remain excluded from version control.
+Environment-specific configuration and AWS credentials are excluded from version control.
