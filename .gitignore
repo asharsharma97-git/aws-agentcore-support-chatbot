@@ -1,0 +1,25 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# AWS / environment-specific generated configuration
+agentcore_config.json
+.env
+.env.*
+*.pem
+*.key
+
+# Generated evaluation output
+output_eval_dataset.jsonl
+
+# Udacity/private submission materials
+project_submission/
+solution/
